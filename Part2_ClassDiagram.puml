@@ -1,7 +1,7 @@
 @startuml
 class Ship {
-    - shipName: String
-    - yearBuilt: String
+    # shipName: String
+    # yearBuilt: String
 
     + getShipName(): String
     + setShipName(shipName: String): void
@@ -12,7 +12,7 @@ class Ship {
 }
 
 class CruiseShip {
-    - maxNumberPassengers: int
+    ~ maxNumberPassengers: int
 
     + getMaxNumberPassengers(): int
     + setMaxNumberPassengers(maxNumberPassengers: int): void
@@ -20,7 +20,7 @@ class CruiseShip {
 }
 
 class CargoShip {
-    - cargoCapacityInTonnage: int
+    ~ cargoCapacityInTonnage: int
 
     + getCargoCapacityInTonnage(): int
     + setCargoCapacityInTonnage(cargoCapacityInTonnage: int): void
