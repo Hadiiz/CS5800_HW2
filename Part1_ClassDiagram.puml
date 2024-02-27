@@ -1,6 +1,4 @@
 @startuml
-'https://plantuml.com/class-diagram
-
 
 abstract class Employee {
     - firstName: String
@@ -17,7 +15,7 @@ abstract class Employee {
 }
 
 class SalariedEmployee {
-    - weeklySalary: int
+    ~ weeklySalary: int
 
     + getWeeklySalary(): int
     + setWeeklySalary(weeklySalary: int): void
@@ -25,8 +23,8 @@ class SalariedEmployee {
 }
 
 class HourlyEmployee {
-    - wage: int
-    - hoursWorked: int
+    ~ wage: int
+    ~ hoursWorked: int
 
     + getWage(): int
     + setWage(wage: int): void
@@ -36,8 +34,8 @@ class HourlyEmployee {
 }
 
 class CommissionEmployee {
-    - commissionRate: int
-    - grossSales: int
+    ~ commissionRate: int
+    ~ grossSales: int
 
     + getCommissionRate(): int
     + setCommissionRate(commissionRate: int): void
@@ -47,7 +45,7 @@ class CommissionEmployee {
 }
 
 class BaseEmployee {
-    - baseSalary: int
+    ~ baseSalary: int
 
     + getBaseSalary(): int
     + setBaseSalary(baseSalary: int): void
