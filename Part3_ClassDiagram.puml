@@ -2,9 +2,9 @@
 'https://plantuml.com/class-diagram
 
 class Instructor {
-    - firstName: String
-    - lastName: String
-    - officeNumber: String
+    ~ firstName: String
+    ~ lastName: String
+    ~ officeNumber: String
 
     + getFirstName(): String
     + setFirstName(firstName: String): void
@@ -16,9 +16,9 @@ class Instructor {
 }
 
 class Textbook {
-    - title: String
-    - author: String
-    - publisher: String
+    ~ title: String
+    ~ author: String
+    ~ publisher: String
 
     + getTitle(): String
     + setTitle(title: String): void
@@ -30,9 +30,9 @@ class Textbook {
 }
 
 class Course {
-    - name: String
-    - instructors: ArrayList<Instructor>
-    - textbooks: ArrayList<Textbook>
+    ~ name: String
+    ~ instructors: ArrayList<Instructor>
+    ~ textbooks: ArrayList<Textbook>
 
     + Course()
     + getName(): String
